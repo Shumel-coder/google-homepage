@@ -1,0 +1,300 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of CSS Reset */
+
+
+body {
+    background: white;
+    font-size: 14px;
+    font-family: Roboto,arial,sans-serif;
+    color: #222;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+    box-sizing: border-box;
+    height: 60px;
+    margin: 0px;
+    margin-left: 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#navleft, #navright, #navmiddle, #navlast {
+    display: flex;
+    align-items: center;
+}
+
+.navlink {
+    padding: 10px;
+}
+
+.navlink:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+#Account img {
+    width: 32px;
+    border-radius: 50%;
+}
+
+#Apps img {
+    width: 28px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search {
+    display:flex;
+    align-items: center;
+    border: none;
+    margin-top: 30px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+}
+
+#search:hover, search:focus-within {
+    border-color: white;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+#searchbox {
+    border: none;
+    height: 40px;
+    width: 500px;
+    background-color: transparent;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    flex: 100%;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 16px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+#searchicon {
+    height: 32px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    padding-left: 15px;
+}
+
+#microphone {
+    height: 32px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+input {
+    input {
+        -webkit-writing-mode: horizontal-tb !important;
+        text-rendering: auto;
+        color: -internal-light-dark(black, white);
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: start;
+        appearance: auto;
+        background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+        -webkit-rtl-ordering: logical;
+        cursor: text;
+    }
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.search-button {
+    margin: 30px 5px;
+    padding: 0 16px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 27px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    border: 1px solid silver;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+footer {
+    background: whitesmoke;
+    margin-top: 200px;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+}
+
+#carbon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    margin: 0px;
+    padding: 5px;
+}
+
+#carbon-text:hover {
+    text-decoration: underline
+}
+
+#bottomfooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 24px;
+    padding: 0 15px;
+}
+
+#right-footer, #left-footer {
+    display: flex;
+}
+
+.footer-link {
+    margin: ;
+    padding: 15px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 650px) {
+    #Googlelogo {
+        width:100%;
+        display: flex;
+        justify-content:center;
+    }
+
+    #searchbox {
+        width: 100%;
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 590px) {
+    #right-footer, #left-footer {
+        display: flex;
+        flex-direction:column;
+    }
+}
+
+@media (max-width: 350px) {
+    nav {
+        width: 100%;
+    }
+
+
+    #Googlelogo img{
+        width: 90%;
+        margin:auto;
+    }
+
+    main {
+        transform: translateX(5%);
+    }
+}
+
+@media (max-width: 330px) {
+    main {
+        transform: translateX(5%);
+    }
+}
+
+@media (max-width: 280px) {
+    main {
+        transform: translateX(15%);
+    }
+}
+
+@media (max-width: 250px) {
+    main {
+        transform: translateX(20%);
+        height: 100vh;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 200px) {
+    main {
+        transform: translateX(25%);
+    }
+}
+
